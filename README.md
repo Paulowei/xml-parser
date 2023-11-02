@@ -34,3 +34,27 @@ The NaryTreeNode<XMLElement> structure is then converted to XMLCore Object .
 -  xml::{}
 {element=[element::{attribute=[value]}], xml=[xml::{}]}
 [[xml::{}], [element::{attribute=[value]}]]
+
+- To harness the functionality of this API , 
+- Instantiate the XMLParser class ;
+- XMLParser  compiler = new XMLParser()  ;
+- Then  create  an XMLCore by calling the method  (public  XMLCore parse(String source) ) ;
+ - String value  =  new String ("<xml><element attribute=value></element></xml>") ;
+- XMLCore central =  compiler.parse(value) ;  
+-To append a child Node to the XMLCore structure that  is returned ;
+  -call the  (public void appendNode(String tag,String content ) ) method ; 
+- central.appendNode("tag","content")  ;
+- Now rebuild the String by calling the rebuild method  ( public static String rebuild (XMLCore creator) ) ;
+- String gains = XMLCore.rebuild(central ) ;
+- System.out.println(gains)  ; 
+- To add a Node at any position in the array of the XMLCore object ;
+- call the (public void  setNodeAt(int position,String element,String internal) method ;
+- central.setNodeAt(0,"alter","text") ;
+- String  second = XMLCore.rebuild(central ) ;
+- central.setNodeAt(1,"added","text") ;
+- String  third = XMLCore.rebuild(central ) ;
+- Now to remove a child node from an XMLCore object  at a position , use the  (public void detachNode(int position) ) method  ;
+- central.detachNode(2) ;
+- Now rebuild the String to check the changes that have been made ;
+- String fourth = XMLCore.rebuild(central) ;
+- System.out.println(fourth ) ; 
