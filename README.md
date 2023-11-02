@@ -1,7 +1,7 @@
 # XML-PARSER 
 a compiler for xml (extensible mark-up language) . 
 The XML files, or strings are converted to NaryTree<XMLElement> structures upon iteration . 
-The NaryTreeNode structure is then converted to XMLCore Object .  
+The NaryTreeNode<XMLElement> structure is then converted to XMLCore Object .  
 
 - Remember to install maven before trying to compile this project  ; 
 -The project was built, and also compiled with Java SE 17 , so please try to install Java SE 17 ; 
