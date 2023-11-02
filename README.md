@@ -31,6 +31,6 @@ The NaryTreeNode structure is then converted to XMLCore Object .
 - and finally , a nested list (List<List<XMLCore>>) of the Level Order Traversal representation of the XML parse-tree ; 
 
 - The result of any of the above commands at the respective destinations is ; 
-  xml::{}
+-  xml::{}
 {element=[element::{attribute=[value]}], xml=[xml::{}]}
 [[xml::{}], [element::{attribute=[value]}]]
