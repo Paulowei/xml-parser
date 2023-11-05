@@ -39,7 +39,7 @@ The NaryTreeNode<XMLElement> structure is then converted to XMLCore Object .
 - Instantiate the XMLParser class ;
 - XMLParser  compiler = new XMLParser()  ;
 - Then  create  an XMLCore by calling the method  (public  XMLCore parse(String source) ) ;
- - String value  =  new String ("<xml><element attribute=value></element></xml>") ;
+ - String value  =  new String (" <xml><element attribute=value></element></xml> ") ;
 - XMLCore central =  compiler.parse(value) ;  
 -To append a child Node to the XMLCore structure that  is returned ;
   -call the  (public void appendNode(String tag,String content ) ) method ; 
