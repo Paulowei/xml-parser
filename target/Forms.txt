@@ -1,0 +1,9 @@
+xml::{encoding=[UTF-8], version=[1.0]}
+{alias=[alias:Trials:{width=[30px]}, alias:plans:{height=[40px]}], attempt=[attempt::{class=[frames]}], parse=[parse::{id=[tracks]}], xml=[xml::{encoding=[UTF-8], version=[1.0]}]}
+[[xml::{encoding=[UTF-8], version=[1.0]}], [attempt::{class=[frames]}, parse::{id=[tracks]}], [alias:Trials:{width=[30px]}, alias:plans:{height=[40px]}]]
+xml::{encoding=[UTF-8], version=[1.0]}
+{alias=[alias:Trials:{width=[30px]}, alias:plans:{height=[40px]}], attempt=[attempt::{class=[frames]}], parse=[parse::{id=[tracks]}], xml=[xml::{encoding=[UTF-8], version=[1.0]}]}
+[[xml::{encoding=[UTF-8], version=[1.0]}], [attempt::{class=[frames]}, parse::{id=[tracks]}], [alias:Trials:{width=[30px]}, alias:plans:{height=[40px]}]]
+xml::{encoding=[UTF-8], version=[1.0]}
+{alias=[alias:Trials:{width=[30px]}, alias:plans:{height=[40px]}], attempt=[attempt::{class=[frames]}], parse=[parse::{id=[tracks]}], xml=[xml::{encoding=[UTF-8], version=[1.0]}]}
+[[xml::{encoding=[UTF-8], version=[1.0]}], [attempt::{class=[frames]}, parse::{id=[tracks]}], [alias:Trials:{width=[30px]}, alias:plans:{height=[40px]}]]
