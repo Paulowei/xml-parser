@@ -165,6 +165,7 @@ public    class NaryTree<C> implements Serializable{
                     greet.offer(temps.links.get(re)) ; 
                 }
             }
-        }
+        } 
+
         // NaryTreeNode<C>  phase = magnetic.get( ku ) ;
   }

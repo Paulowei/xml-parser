@@ -7,6 +7,11 @@ import java.io.Serializable ;
 import java.util.List; 
 import java.util.ArrayList ; 
 import java.util.Map ; 
+import java.util.Set ; 
+import java.util.HashSet ; 
+import java.lang.Class ;  
+import java.util.LinkedList  ;
+import java.util.Queue ; 
 
 public  class Tools{ 
 
@@ -62,5 +67,25 @@ public  class Tools{
             values.add(hours) ; 
             mapper.put( names,values);  
         }
-    }
+    }  
+    public static boolean isParent(Class<?> parent,Class<?> child){
+        Queue<Class<?>> classes = new LinkedList<Class<?>>() ;   
+        classes.offer(child) ;   
+        Set<Class<?>> setty = new HashSet<Class<?>>() ; 
+        while(classes.isEmpty()){
+            Class<?> parts = classes.element() ;  
+            classes.poll() ; 
+            if(parts==null){continue ; } 
+            if(setty.contains(parts)){continue ; }  
+            setty.add(parts) ;   
+            if(parts.equals(parent)){return true ; }
+            Class<?>[] interfces=  parts.getInterfaces()  ;
+            Class<?> supers = parts.getSuperclass() ; 
+             classes.offer(supers) ; 
+            for(int  cf=0;cf<interfces.length;cf++){classes.offer(interfces[cf]) ;}
+        }  
+        return false  ;  
+    }  
+    //      for(int ft=0;ft<supers.length;ft++){
+      //  classes.offer(supers[ft]) ;  } 
 }

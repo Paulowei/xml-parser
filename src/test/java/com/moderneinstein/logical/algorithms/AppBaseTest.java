@@ -27,16 +27,16 @@ public class AppBaseTest
             channels.println(levels.toString()) ;  
     }   
     //  String[] args 
-  // @Test
+   @Test
     public void  Signs()
     {
         System.out.println( "Hello World!" );  
-        String  patternsR = new String( "<dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter-api</artifactId><version>5.9.0</version><scope>test</scope></dependency> ") ;   
+        String  patternsR = new String( "<dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter-api</artifactId><version>5.9.0</version><scope>test</scope></dependency>") ;   
         String patternsF  = new String( "<xml version=2.4><groupId>com.moderneinstein.logical.algorithms</groupId><artifactId>xml-parser</artifactId><version>2.4</version><name>xml-parser</name>") ;  
         TestString(patternsR,plans)  ; 
         TestString(patternsF, plans) ;  
     }     
-   // @Test   
+    @Test   
      public  void Tests(){
         String variables[]  = new String[] {"Test","Variables"} ;   
       //  main(variables) ; 

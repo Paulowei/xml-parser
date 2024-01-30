@@ -177,5 +177,8 @@ public class TreeUtils {
         return brace ; 
     }
     
+   /*  public static NaryTreeNode<T> merge(NaryTreeNode<T>  sigma,NaryTreeNode<T>  theta){
+        if(theta==)
+    }*/
     
     }

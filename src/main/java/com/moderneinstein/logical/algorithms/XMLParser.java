@@ -39,8 +39,8 @@ public class XMLParser {
     //  stores = new TreeMap<String,List<NaryTreeNode<XMLElement>>>() ;     
     public static final  String[] operands = new String[ ]{"starts" ,"items","encoding","UTF-8","version","1.0","xml"} ; 
     //public static XMLElement defaults = new XMLElement( operands[ 0],new Vector<String>(),new ArrayList<List<String>>( ),operands[ 1]) ;     
-    public static XMLElement defaults =new XMLElement(operands[6],new ArrayList<String>(),new Vector<String>(),new String()) ; 
-    public static XMLElement reserve = new XMLElement(operands[6],new String(),new String[]{operands[2],operands[4]},new String[]{operands[3],operands[5]})  ;
+    public static final XMLElement defaults =new XMLElement(operands[6],new ArrayList<String>(),new Vector<String>(),new String()) ; 
+    public static final XMLElement  reserve  = new XMLElement(operands[6],new String(),new String[]{operands[2],operands[4]},new String[]{operands[3],operands[5]})  ;
     public XMLParser(){
            referral = new LinkedList<NaryTreeNode<XMLElement>>()   ;
            stores = new   HashMap<String,List<NaryTreeNode<XMLElement>>>() ;
@@ -114,7 +114,12 @@ public class XMLParser {
                 NaryTreeNode<XMLElement>  coils =  referral.peekLast() ;  //System.out.println(coils.value.deriveTitle()) ; 
                  referral.removeLast() ;   
                  return coils ;  
-    }
+    }  
+    /*          //    System.out.println (input) ;
+                   System.out.println(voltage) ;  
+         //   if(referral.size()==0){referral.addLast
+            (new NaryTreeNode<XMLElement>(defaults)) ; }  
+                System.out.println( referral.size()) ;       */
     public XMLCore  parse(String input){
         int height = input.length()  ;
         int[] interrupt = new int[2] ; 
@@ -123,15 +128,18 @@ public class XMLParser {
          NaryTreeNode<XMLElement>  known = new NaryTreeNode<XMLElement>(defaults)  ;  // new XMLElement( defaults ) ;   
         boolean states = false ;   
         for(interrupt[0]=0;interrupt[0]<height;interrupt[0]++){
-            char voltage = input.charAt  (interrupt[0]) ;  
+            char voltage = input.charAt  (interrupt[0]) ;    
             if(starts.contains(interrupt[0])&&!limits.contains(interrupt[0])){
             NaryTreeNode<XMLElement> brace = handleOpener(interrupt,input)  ; 
             if(states==false){states=true ;  known = referral.peekLast() ;  }
                   continue ;    }
             if(limits.contains(interrupt[0])){
             NaryTreeNode<XMLElement> brace =  handleCloser(interrupt,input) ;
-                   continue ;  }
-            referral.peekLast().value.setInternal(referral.peekLast().value.deriveInternal().concat(Character.toString (voltage))) ;
+                   continue ;  }   
+         if(referral.size ()>0){  
+            String prevs = referral.peekLast().value.deriveInternal() ; 
+            referral.peekLast().value.setInternal
+            (prevs.concat(Character.toString (voltage))) ; }
            }  
         if(referral.size( )==0){referral.clear() ; return  new XMLCore(known) ; }
          referral.clear() ; return  new XMLCore(known)  ; //\referral.element())  ;  // .links.get (0)  // null ;   //point ;   //null ;

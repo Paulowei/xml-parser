@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.moderneinstein.logical.algorithms.VerseTest" time="0.015" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.moderneinstein.logical.algorithms.VerseTest" time="0.032" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\ACCESS\Documents\Codebases\xml-parser\target\test-classes;C:\Users\ACCESS\Documents\Codebases\xml-parser\target\classes;C:\Users\ACCESS\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\ACCESS\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\ACCESS\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platform-commons-1.9.0.jar;C:\Users\ACCESS\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="java.class.path" value="C:\Users\ACCESS\Documents\Code\xml-parser\target\test-classes;C:\Users\ACCESS\Documents\Code\xml-parser\target\classes;C:\Users\ACCESS\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\ACCESS\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\ACCESS\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platform-commons-1.9.0.jar;C:\Users\ACCESS\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.8\bin"/>
-    <property name="sun.java.command" value="C:\Users\ACCESS\AppData\Local\Temp\surefire89545817763411788\surefirebooter-20231210193315756_3.jar C:\Users\ACCESS\AppData\Local\Temp\surefire89545817763411788 2023-12-10T19-33-11_818-jvmRun1 surefire-20231210193315756_1tmp surefire_0-20231210193315756_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\ACCESS\AppData\Local\Temp\surefire14557041853274186077\surefirebooter-20240130132831733_3.jar C:\Users\ACCESS\AppData\Local\Temp\surefire14557041853274186077 2024-01-30T13-28-30_895-jvmRun1 surefire-20240130132831733_1tmp surefire_0-20240130132831733_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\ACCESS\Documents\Codebases\xml-parser\target\test-classes;C:\Users\ACCESS\Documents\Codebases\xml-parser\target\classes;C:\Users\ACCESS\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\ACCESS\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\ACCESS\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platform-commons-1.9.0.jar;C:\Users\ACCESS\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\ACCESS\Documents\Code\xml-parser\target\test-classes;C:\Users\ACCESS\Documents\Code\xml-parser\target\classes;C:\Users\ACCESS\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\ACCESS\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\ACCESS\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platform-commons-1.9.0.jar;C:\Users\ACCESS\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\ACCESS"/>
     <property name="user.language" value="en"/>
@@ -25,12 +25,12 @@
     <property name="java.version.date" value="2023-07-18"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17.0.8"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\ACCESS\Documents\Codebases\xml-parser"/>
+    <property name="basedir" value="C:\Users\ACCESS\Documents\Code\xml-parser"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ACCESS\AppData\Local\Temp\surefire89545817763411788\surefirebooter-20231210193315756_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ACCESS\AppData\Local\Temp\surefire14557041853274186077\surefirebooter-20240130132831733_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
@@ -44,7 +44,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\ACCESS\AppData\Local\Temp\"/>
     <property name="java.version" value="17.0.8"/>
-    <property name="user.dir" value="C:\Users\ACCESS\Documents\Codebases\xml-parser"/>
+    <property name="user.dir" value="C:\Users\ACCESS\Documents\Code\xml-parser"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -56,7 +56,23 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="Tests" classname="com.moderneinstein.logical.algorithms.VerseTest" time="0">
+  <testcase name="Signs" classname="com.moderneinstein.logical.algorithms.VerseTest" time="0.016">
+    <system-out><![CDATA[dependency::{}
+{artifactId=[artifactId:junit-jupiter-api:{}], dependency=[dependency::{}], groupId=[groupId:org.junit.jupiter:{}], scope=[scope:test:{}], version=[version:5.9.0:{}]}
+[[dependency::{}], [groupId:org.junit.jupiter:{}, artifactId:junit-jupiter-api:{}, version:5.9.0:{}, scope:test:{}]]
+
+xml::{version=[2.4]}
+{artifactId=[artifactId:xml-parser:{}], groupId=[groupId:com.moderneinstein.logical.algorithms:{}], name=[name:xml-parser:{}], version=[version:2.4:{}], xml=[xml::{version=[2.4]}]}
+[[xml::{version=[2.4]}], [groupId:com.moderneinstein.logical.algorithms:{}, artifactId:xml-parser:{}, version:2.4:{}, name:xml-parser:{}]]
+
+groupId:com.moderneinstein.logical.algorithms:{}
+{groupId=[groupId:com.moderneinstein.logical.algorithms:{}]}
+[[groupId:com.moderneinstein.logical.algorithms:{}]]
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="Tests" classname="com.moderneinstein.logical.algorithms.VerseTest" time="0.016">
     <system-out><![CDATA[<prior ><xml encoding=UTF-8 version=1.0 ><groupId >com.moderneinstein.logical.algorithms</groupId><artifactId >xml-parser</artifactId><version >2.4</version></xml></prior>
 true
 <prior ><xml encoding=UTF-8 version=1.0 ><groupId >com.moderneinstein.logical.algorithms</groupId><artifactId >xml-parser</artifactId><version >2.4</version></xml></prior> 

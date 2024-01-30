@@ -5,20 +5,24 @@ import java.util.function.Function ;
 import java.util.Objects ;
 import java.util.Set ; 
 import java.util.Map ;
+
 import java.util.HashMap;  
 import java.util.List ;
 import java.io.PrintStream ;  
 import java.io.BufferedWriter ;
 import java.io.OutputStreamWriter ;
+
 import java.io.FileOutputStream ; 
 import java.io.File  ; 
 import java.io.PrintWriter ; 
 import java.io.IOException ; 
 import java.io.InputStreamReader ; 
+
 import java.io.InputStream ; 
 import java.io.FileInputStream ; 
 import java.io.InputStreamReader ; 
 import java.io.BufferedReader  ; 
+import  java.util.Scanner ; 
 
 
 public class Central{       
@@ -181,7 +185,8 @@ public class Central{
        // alias = new HashMap<String,Function<String[],Object>>( ); 
         configure () ; 
        // Terminal(args) ;  
-      // System.out.println (args[ 0 ]) ; 
+      // System.out.println (args[ 0 ]) ;   
+      Scanner scanner = new Scanner(System.in) ; 
        Function<String[],Object> worker = alias.get(args[0]) ; 
        Object  derived =  worker.apply(args) ;
        //  stream4.println(args[1]) ;   
