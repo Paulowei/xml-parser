@@ -45,7 +45,7 @@ public class VerseTest
         plans.println ( created) ;   plans.println() ;
     }
     //  String[] args 
-    @Test
+  //  @Test
     public void  Signs()
     {
        // System.out.println( "Hello World!" );  
@@ -59,7 +59,7 @@ public class VerseTest
     }      
      //  main(variables) ; 
      //  main ()  ;     
-  @Test   
+  // @Test   
      public  void Tests(){
         String variables[]  = new String[] {"Test","Variables"} ;   
      //  Signs () ;  

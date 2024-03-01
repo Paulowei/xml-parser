@@ -5,18 +5,26 @@ import java.util.Stack ;
 import java.util.Queue ;
 import java.util.Set  ;
 import java.io.PrintStream  ;
+
 import  java.util.ArrayList ;
 import java.util.LinkedList  ;
 import java.util.Objects  ;
 import java.util.List ;
+
 import java.io.StringReader;
 import java.util.Map ;
 import java.util.Vector ;
 import java.util.TreeMap ;
 import java.util.TreeSet  ;
+
 import java.util.HashMap ;
 import java.util.HashSet ;
+import java.util.function.Consumer ; 
+import java.lang.Runnable ; 
+import java.util.function.Function  ; 
 
+// import java.util.concurrent.Future  ; 
+ 
 import  com.moderneinstein.logical.algorithms.NaryTree;
 import com.moderneinstein.logical.algorithms.NaryTree.NaryTreeNode ;
 //import com.moderneinstein.logical.algorithms.DOMElement ;
@@ -144,6 +152,30 @@ public class XMLParser {
         if(referral.size( )==0){referral.clear() ; return  new XMLCore(known) ; }
          referral.clear() ; return  new XMLCore(known)  ; //\referral.element())  ;  // .links.get (0)  // null ;   //point ;   //null ;
     }       
+
+    public  void parseAsync(String input,Consumer<XMLCore> handler){  
+        XMLParser  parser = new XMLParser() ; 
+        Thread threaded  = new Thread(){
+            @Override 
+            public void run(){  
+                XMLCore cores =  parser.parse(input) ; 
+                handler.accept(cores) ; 
+            }
+        } ;  
+        threaded.start() ; 
+    }  
+    public Future<XMLCore> parseAsync(String input){
+        Future<XMLCore>  futures =new Future<XMLCore>() ;  
+        XMLParser parser = new XMLParser( ) ; 
+        Thread  trials = new Thread(){
+            @Override 
+            public void run(){
+                 XMLCore created = parser.parse(input)  ;  
+                futures.succeed( created) ;   
+            }
+        } ;  
+         return futures ; 
+    }
 
    /*   public static void TestString( String present    ) {  
         XMLParser converter = new XMLParser( ) ; 

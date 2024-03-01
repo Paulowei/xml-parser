@@ -99,7 +99,7 @@ public class XMLSerialiser {
             Object  present = iterator.next() ; 
             XMLCore xmls =  serialiser.Serialise(present) ; 
             created.deriveLinks().add(xmls) ; 
-            xmls.setParent(created) ; 
+          //  xmls.setParent(created) ; 
         }
         return  created  ; //new String("") ; 
     }  
@@ -128,7 +128,7 @@ public class XMLSerialiser {
         while(iterator.hasNext()){
             R temps = iterator.next() ;  
             XMLCore descendant =  writer.Serialise(temps) ;  
-            descendant.setParent(central) ; 
+          //  descendant.setParent(central) ; 
             central.deriveLinks().add(descendant) ;
         } 
         return central ;  
@@ -136,7 +136,8 @@ public class XMLSerialiser {
     //  ? temps = iterator.hasNext() ;   
     //   // if(source instanceof Collection){  source.getClass().getSimpleName(),
         // descriptorString // descriptorString  // (cleans.getSimpleName(),
-    public XMLCore Serialise( Object source) throws IllegalArgumentException{  
+    public XMLCore Serialise( Object source) throws IllegalArgumentException{   
+        if(source==null){return  new XMLCore(new XMLElement("null","null")) ; }
         if(mapper.containsKey(source.getClass( ))){
             Function<Object,String> verse = mapper.get(source.getClass( )) ; 
              String straps =  verse.apply(source) ;   
@@ -145,25 +146,30 @@ public class XMLSerialiser {
             return  cores     ;  
          }    
         for(int  cs=0;cs<helpers.length;cs++){    
-            Class<?> checks = helpers[cs] ; 
+            Class<?> checks = helpers[cs] ;  
+         //   System.out.println(source.getClass ().toString( ))   ;  
             if(Tools.isParent(checks,source.getClass())){   //  if(source instanceof    ){ 
-                //<?> temps =  helpers[cs] ; 
+                //<?> temps =  helpers[cs] ;   
                Function< Object,XMLCore> frames = relational[cs] ;  
             XMLCore  created = frames.apply(source) ;  
             return created  ;   
             }
-         }
+         }  
+
          Class<?> cleans = source.getClass() ; 
          Field[] buffers = cleans.getFields() ;     
          XMLElement element  = new XMLElement(cleans.getCanonicalName(),new String()) ;
-         XMLCore parents = new XMLCore(element) ; //(cleans.toString()) ;   
+         XMLCore parents = new XMLCore(element) ; //(cleans.toString()) ;    
+         if(source.getClass().isArray()){
+            return parents ; 
+         }
          try{
          for(int  cf=0;cf< buffers.length;cf++){  
             Field parts =  buffers[cf] ; 
-            Object objects =  parts.get(source) ; 
+            Object objects =  parts.get(source) ;  
              XMLCore created =   Serialise(objects) ; 
             parents.deriveLinks().add(created) ;  
-            created.setParent(parents) ;
+          //  created.setParent(parents) ;
          }}catch(IllegalArgumentException|IllegalAccessException except){
 
          }

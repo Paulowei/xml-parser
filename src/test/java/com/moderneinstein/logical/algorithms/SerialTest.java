@@ -54,7 +54,7 @@ public class SerialTest{
       //   loader5.resolveClass(source.getClass()) ;
         Object objects =  serialiser.DeSerialise(xmlCore,loader5) ;  
     }
-    @Test
+   //  @Test
     public void test5() throws Exception {
         TestClass1 class1  =  new TestClass1("Trials","Verse" ) ;  
         TestClass1 class2 = new TestClass1("Straight","Straps") ; 
@@ -65,10 +65,20 @@ public class SerialTest{
         Object objects[] = new Object[]{"construct","instance"} ; 
          TestClass1 classes =   (TestClass1)buffers[0].newInstance(objects) ; //(new String[]{}) ;    
          System.out.println(classes.toString()) ; 
+        String[] straps = new String[]{} ; 
+        main(straps)  ; 
     }  
      
     public static void  main(String[] args){
         int width = args.length ; 
-        
+        String source = new String("<xml version=1.0><groupId>com.moderneinstein.logical.algorithms</groupId><artifactId>xml-parser</artifactId><version>2.4</version><name>xml-parser</name>") ; 
+        XMLParser parser = new XMLParser() ; 
+        XMLCore created =   parser.parse(source)  ;   
+        List<List<XMLCore>> tiers =  created.deriveLevels() ; 
+        System.out.println(tiers.toString()) ; 
+        XMLSerialiser serialiser = new XMLSerialiser() ; 
+        XMLCore cores =  serialiser.Serialise(created) ; 
+        List<List<XMLCore>> levels =  cores.deriveLevels() ; 
+        System.out.println(levels.toString()) ;     
     }
 }

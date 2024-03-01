@@ -1,0 +1,160 @@
+# Created at 2024-01-30T21:16:47.866
+Thread dump for process (22228@NUN-LIB-AIO-10):
+"main" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.1/java.io.FileOutputStream.writeBytes(Native Method)
+        at java.base@17.0.1/java.io.FileOutputStream.write(FileOutputStream.java:349)
+        at java.base@17.0.1/java.io.BufferedOutputStream.write(BufferedOutputStream.java:123)
+        at java.base@17.0.1/java.io.PrintStream.write(PrintStream.java:568)
+        at java.base@17.0.1/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+        at java.base@17.0.1/java.io.BufferedOutputStream.write(BufferedOutputStream.java:127)
+        at app//org.apache.maven.surefire.api.util.internal.Channels$4.writeImpl(Channels.java:253)
+        at app//org.apache.maven.surefire.api.util.internal.AbstractNoninterruptibleWritableChannel.write(AbstractNoninterruptibleWritableChannel.java:72)
+        at app//org.apache.maven.surefire.api.util.internal.AbstractNoninterruptibleWritableChannel.writeBuffered(AbstractNoninterruptibleWritableChannel.java:51)
+        at app//org.apache.maven.surefire.api.stream.AbstractStreamEncoder.write(AbstractStreamEncoder.java:74)
+        at app//org.apache.maven.surefire.booter.spi.EventChannelEncoder.write(EventChannelEncoder.java:307)
+        at app//org.apache.maven.surefire.booter.spi.EventChannelEncoder.setOutErr(EventChannelEncoder.java:189)
+        at app//org.apache.maven.surefire.booter.spi.EventChannelEncoder.testOutput(EventChannelEncoder.java:183)
+        at app//org.apache.maven.surefire.api.booter.ForkingRunListener.writeTestOutput(ForkingRunListener.java:113)
+        at app//org.apache.maven.surefire.api.booter.ForkingRunListener.writeTestOutput(ForkingRunListener.java:44)
+        at app//org.apache.maven.surefire.junitplatform.RunListenerAdapter.writeTestOutput(RunListenerAdapter.java:379)
+        at app//org.apache.maven.surefire.api.report.ConsoleOutputCapture$ForwardingPrintStream.println(ConsoleOutputCapture.java:138)
+        at app//com.moderneinstein.logical.algorithms.Tools.isParent(Tools.java:80)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:151)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Collections(XMLSerialiser.java:100)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser$$Lambda$418/0x0000000800cc24f8.apply(Unknown Source)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:154)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Collections(XMLSerialiser.java:100)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser$$Lambda$418/0x0000000800cc24f8.apply(Unknown Source)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:154)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Collections(XMLSerialiser.java:100)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser$$Lambda$418/0x0000000800cc24f8.apply(Unknown Source)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:154)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Collections(XMLSerialiser.java:100)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser$$Lambda$418/0x0000000800cc24f8.apply(Unknown Source)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:154)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Collections(XMLSerialiser.java:100)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser$$Lambda$418/0x0000000800cc24f8.apply(Unknown Source)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:154)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Collections(XMLSerialiser.java:100)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser$$Lambda$418/0x0000000800cc24f8.apply(Unknown Source)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:154)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Collections(XMLSerialiser.java:100)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser$$Lambda$418/0x0000000800cc24f8.apply(Unknown Source)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:154)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Collections(XMLSerialiser.java:100)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser$$Lambda$418/0x0000000800cc24f8.apply(Unknown Source)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:154)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Collections(XMLSerialiser.java:100)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser$$Lambda$418/0x0000000800cc24f8.apply(Unknown Source)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:154)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Collections(XMLSerialiser.java:100)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser$$Lambda$418/0x0000000800cc24f8.apply(Unknown Source)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:154)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Collections(XMLSerialiser.java:100)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser$$Lambda$418/0x0000000800cc24f8.apply(Unknown Source)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:154)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Collections(XMLSerialiser.java:100)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser$$Lambda$418/0x0000000800cc24f8.apply(Unknown Source)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:154)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Collections(XMLSerialiser.java:100)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser$$Lambda$418/0x0000000800cc24f8.apply(Unknown Source)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:154)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Collections(XMLSerialiser.java:100)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser$$Lambda$418/0x0000000800cc24f8.apply(Unknown Source)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:154)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Collections(XMLSerialiser.java:100)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser$$Lambda$418/0x0000000800cc24f8.apply(Unknown Source)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:154)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Collections(XMLSerialiser.java:100)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser$$Lambda$418/0x0000000800cc24f8.apply(Unknown Source)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:154)
+        at app//com.moderneinstein.logical.algorithms.XMLSerialiser.Serialise(XMLSerialiser.java:166)
+
+"Reference Handler" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.1/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+        at java.base@17.0.1/java.lang.ref.Reference.processPendingReferences(Reference.java:253)
+        at java.base@17.0.1/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:215)
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.base@17.0.1/java.lang.Object.wait(Native Method)
+        at java.base@17.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@17.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+        at java.base@17.0.1/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:172)
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" 
+   java.lang.Thread.State: RUNNABLE
+
+"Notification Thread" 
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.1/java.lang.Object.wait(Native Method)
+        at java.base@17.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+        at java.base@17.0.1/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+        at java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+        at java.base@17.0.1/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:162)
+
+"surefire-forkedjvm-stream-flusher" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+        at java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+        at java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+        at java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at java.management@17.0.1/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at java.management@17.0.1/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:197)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:683)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.access$600(ForkedBooter.java:80)
+        at app//org.apache.maven.surefire.booter.ForkedBooter$4.update(ForkedBooter.java:378)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:426)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:366)
+        at java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+
+
+

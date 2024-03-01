@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.moderneinstein.logical.algorithms.SerialTest" time="0.015" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.moderneinstein.logical.algorithms.SerialTest" time="0.047" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.8\bin"/>
-    <property name="sun.java.command" value="C:\Users\ACCESS\AppData\Local\Temp\surefire14557041853274186077\surefirebooter-20240130132831733_3.jar C:\Users\ACCESS\AppData\Local\Temp\surefire14557041853274186077 2024-01-30T13-28-30_895-jvmRun1 surefire-20240130132831733_1tmp surefire_0-20240130132831733_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\ACCESS\AppData\Local\Temp\surefire13445785930993053403\surefirebooter-20240131195247887_3.jar C:\Users\ACCESS\AppData\Local\Temp\surefire13445785930993053403 2024-01-31T19-52-45_306-jvmRun1 surefire-20240131195247887_1tmp surefire_0-20240131195247887_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\ACCESS\Documents\Code\xml-parser\target\test-classes;C:\Users\ACCESS\Documents\Code\xml-parser\target\classes;C:\Users\ACCESS\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\ACCESS\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\ACCESS\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platform-commons-1.9.0.jar;C:\Users\ACCESS\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ACCESS\AppData\Local\Temp\surefire14557041853274186077\surefirebooter-20240130132831733_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ACCESS\AppData\Local\Temp\surefire13445785930993053403\surefirebooter-20240131195247887_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
@@ -56,16 +56,183 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="test5" classname="com.moderneinstein.logical.algorithms.SerialTest" time="0.015">
-    <system-out><![CDATA[[[com.moderneinstein.logical.algorithms.SerialTest.TestClass1::{}], [java.lang.String:Straight:{}, java.lang.String:Straps:{}]]
+  <testcase name="test5" classname="com.moderneinstein.logical.algorithms.SerialTest" time="0.047">
+    <system-out><![CDATA[com.moderneinstein.logical.algorithms.SerialTest.TestClass1
+[com.moderneinstein.logical.algorithms.SerialTest$TestClass1]
+java.lang.Object
+[java.lang.Object, com.moderneinstein.logical.algorithms.SerialTest$TestClass1]
+False
+Memorised
+Memorised
+Memorised
+[[com.moderneinstein.logical.algorithms.SerialTest.TestClass1::{}], [java.lang.String:Straight:{}, java.lang.String:Straps:{}]]
 {com.moderneinstein.logical.algorithms.SerialTest.TestClass1=[com.moderneinstein.logical.algorithms.SerialTest.TestClass1::{}], java.lang.String=[java.lang.String:Straight:{}, java.lang.String:Straps:{}]}
 <com.moderneinstein.logical.algorithms.SerialTest.TestClass1 ><java.lang.String >Straight</java.lang.String><java.lang.String >Straps</java.lang.String></com.moderneinstein.logical.algorithms.SerialTest.TestClass1>
 java.lang.String
+Memorised
+Memorised
+Memorised
+Memorised
 [[com.moderneinstein.logical.algorithms.SerialTest.TestClass1::{}], [java.lang.String:Trials:{}, java.lang.String:Verse:{}]]
 {com.moderneinstein.logical.algorithms.SerialTest.TestClass1=[com.moderneinstein.logical.algorithms.SerialTest.TestClass1::{}], java.lang.String=[java.lang.String:Trials:{}, java.lang.String:Verse:{}]}
 <com.moderneinstein.logical.algorithms.SerialTest.TestClass1 ><java.lang.String >Trials</java.lang.String><java.lang.String >Verse</java.lang.String></com.moderneinstein.logical.algorithms.SerialTest.TestClass1>
 java.lang.String
 construct instance
+[[xml::{version=[1.0]}], [groupId:com.moderneinstein.logical.algorithms:{}, artifactId:xml-parser:{}, version:2.4:{}, name:xml-parser:{}]]
+com.moderneinstein.logical.algorithms.XMLCore
+[com.moderneinstein.logical.algorithms.XMLCore]
+java.lang.Object
+[java.lang.Object, com.moderneinstein.logical.algorithms.XMLCore]
+False
+Memorised
+Memorised
+Memorised
+com.moderneinstein.logical.algorithms.XMLElement
+[com.moderneinstein.logical.algorithms.XMLElement]
+java.lang.Object
+[com.moderneinstein.logical.algorithms.XMLElement, java.lang.Object]
+java.lang.Comparable
+[com.moderneinstein.logical.algorithms.XMLElement, java.lang.Object, java.lang.Comparable]
+java.lang.Cloneable
+[java.lang.Cloneable, com.moderneinstein.logical.algorithms.XMLElement, java.lang.Object, java.lang.Comparable]
+False
+Memorised
+Memorised
+Memorised
+java.util.Vector
+[java.util.Vector]
+java.util.AbstractList
+[java.util.Vector, java.util.AbstractList]
+java.util.List
+[java.util.List, java.util.Vector, java.util.AbstractList]
+java.util.RandomAccess
+[java.util.RandomAccess, java.util.List, java.util.Vector, java.util.AbstractList]
+java.lang.Cloneable
+[java.util.RandomAccess, java.util.List, java.lang.Cloneable, java.util.Vector, java.util.AbstractList]
+java.io.Serializable
+[java.util.RandomAccess, java.util.List, java.lang.Cloneable, java.util.Vector, java.util.AbstractList, java.io.Serializable]
+java.util.AbstractCollection
+[java.util.RandomAccess, java.util.List, java.lang.Cloneable, java.util.AbstractCollection, java.util.Vector, java.util.AbstractList, java.io.Serializable]
+java.util.List
+java.util.Collection
+[java.util.RandomAccess, java.util.List, java.lang.Cloneable, java.util.AbstractCollection, java.util.Vector, java.util.Collection, java.util.AbstractList, java.io.Serializable]
+java.lang.Object
+[java.util.RandomAccess, java.util.List, java.lang.Cloneable, java.util.AbstractCollection, java.util.Vector, java.util.Collection, java.util.AbstractList, java.lang.Object, java.io.Serializable]
+java.util.Collection
+java.lang.Iterable
+[java.util.RandomAccess, java.util.List, java.lang.Cloneable, java.util.AbstractCollection, java.util.Vector, java.util.Collection, java.util.AbstractList, java.lang.Object, java.lang.Iterable, java.io.Serializable]
+False
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+java.lang.String[]
+[[Ljava.lang.String;]
+java.lang.Object
+[java.lang.Object, [Ljava.lang.String;]
+java.lang.Cloneable
+[java.lang.Cloneable, java.lang.Object, [Ljava.lang.String;]
+java.io.Serializable
+[java.lang.Cloneable, java.lang.Object, [Ljava.lang.String;, java.io.Serializable]
+False
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+{artifactId=[artifactId:maven-jar-plugin:{}], groupId=[groupId:org.apache.maven.plugins:{}], plugin=[plugin::{}], version=[version:3.0.2:{}]}
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+Memorised
+[[com.moderneinstein.logical.algorithms.XMLCore::{}], [com.moderneinstein.logical.algorithms.XMLElement::{}, java.util.Vector::{}, null:null:{}, java.lang.String[]::{}, java.lang.String[]::{}, java.lang.String[]::{}, java.lang.Character:=:{}, java.lang.Character: :{}], [java.lang.Character:::{}, com.moderneinstein.logical.algorithms.XMLCore::{}, com.moderneinstein.logical.algorithms.XMLCore::{}, com.moderneinstein.logical.algorithms.XMLCore::{}, com.moderneinstein.logical.algorithms.XMLCore::{}], [com.moderneinstein.logical.algorithms.XMLElement::{}, java.util.Vector::{}, null:null:{}, java.lang.String[]::{}, java.lang.String[]::{}, java.lang.String[]::{}, java.lang.Character:=:{}, java.lang.Character: :{}, com.moderneinstein.logical.algorithms.XMLElement::{}, java.util.Vector::{}, null:null:{}, java.lang.String[]::{}, java.lang.String[]::{}, java.lang.String[]::{}, java.lang.Character:=:{}, java.lang.Character: :{}, com.moderneinstein.logical.algorithms.XMLElement::{}, java.util.Vector::{}, null:null:{}, java.lang.String[]::{}, java.lang.String[]::{}, java.lang.String[]::{}, java.lang.Character:=:{}, java.lang.Character: :{}, com.moderneinstein.logical.algorithms.XMLElement::{}, java.util.Vector::{}, null:null:{}, java.lang.String[]::{}, java.lang.String[]::{}, java.lang.String[]::{}, java.lang.Character:=:{}, java.lang.Character: :{}], [java.lang.Character:::{}, java.lang.Character:::{}, java.lang.Character:::{}, java.lang.Character:::{}]]
 ]]></system-out>
   </testcase>
 </testsuite>

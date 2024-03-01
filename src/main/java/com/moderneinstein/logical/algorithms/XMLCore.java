@@ -96,7 +96,7 @@ public class XMLCore {
         for(int fr=0;fr<versions.size( );fr++){  
                XMLCore temps =  createCore (versions.get(fr)) ;
                 present.links.add(temps)  ;
-                temps.parent = present  ; 
+            //    temps.parent = present  ; 
         }   
         return present ;   
     }   // String example   // findElements  //     }

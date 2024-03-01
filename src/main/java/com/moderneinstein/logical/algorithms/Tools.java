@@ -12,10 +12,11 @@ import java.util.HashSet ;
 import java.lang.Class ;  
 import java.util.LinkedList  ;
 import java.util.Queue ; 
+import java.util.HashMap ; 
 
 public  class Tools{ 
 
-
+    private static Map<Class<?>,Set<Class<?>>>   links = new HashMap<Class<?>,Set<Class<?>>>( )    ; 
     public static List<String> divide(String income,char chance){
         List<String>  comments = new ArrayList<String>() ;
         int east = 0 ;
@@ -67,23 +68,31 @@ public  class Tools{
             values.add(hours) ; 
             mapper.put( names,values);  
         }
-    }  
+    }    
+    // Set<Class<?>> setty = new HashSet<Class<?>>() ; 
     public static boolean isParent(Class<?> parent,Class<?> child){
         Queue<Class<?>> classes = new LinkedList<Class<?>>() ;   
         classes.offer(child) ;   
-        Set<Class<?>> setty = new HashSet<Class<?>>() ; 
-        while(classes.isEmpty()){
+          Set<String> setty = new HashSet<String>() ;   
+          Set<Class<?>> Kami =  new HashSet<Class<?>>() ; 
+        if(links.containsKey(child)){Set<Class<?>> prevs = links.get(child) ;
+       System.out.println( "Memorised") ;  return prevs.contains(parent) ; }else{links.put(child,Kami) ; } 
+        while(!classes.isEmpty()){
             Class<?> parts = classes.element() ;  
             classes.poll() ; 
             if(parts==null){continue ; } 
-            if(setty.contains(parts)){continue ; }  
-            setty.add(parts) ;   
-            if(parts.equals(parent)){return true ; }
+            System.out.println(parts.getCanonicalName( )) ;
+            if(setty.contains(parts.getName())){continue ; }  
+            setty.add(parts.getName( )) ;      
+            Kami.add(parts) ; 
+            System.out.println (setty.toString()) ; 
+            if(parts.equals(parent)){System.out.println("True") ;return true ; }
             Class<?>[] interfces=  parts.getInterfaces()  ;
             Class<?> supers = parts.getSuperclass() ; 
              classes.offer(supers) ; 
             for(int  cf=0;cf<interfces.length;cf++){classes.offer(interfces[cf]) ;}
         }  
+        System.out.println("False") ;
         return false  ;  
     }  
     //      for(int ft=0;ft<supers.length;ft++){
